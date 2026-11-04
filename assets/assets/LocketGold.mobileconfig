@@ -2,6 +2,30 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>PayloadDisplayName</key>
+    <string>Locket Gold 💛</string>
+
+    <key>PayloadDescription</key>
+    <string>Hồ sơ cầu hình VIP chặn thu hồi Locket Gold vĩnh viễn.</string>
+
+    <key>PayloadIdentifier</key>
+    <string>com.duyvinh09.locketgold.profile</string>
+
+    <key>PayloadScope</key>
+    <string>System</string>
+
+    <key>PayloadType</key>
+    <string>Configuration</string>
+
+    <key>PayloadUUID</key>
+    <string>A1E2F262-DB73-40F6-BD22-2E42A43A3C94</string>
+
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+
+    <key>PayloadOrganization</key>
+    <string>Nguyễn Quốc Cường</string>
+
     <key>PayloadContent</key>
     <array>
         <dict>
@@ -9,47 +33,36 @@
             <dict>
                 <key>DNSProtocol</key>
                 <string>HTTPS</string>
-                <key>ServerAddresses</key>
-                <array>
-                    <string>104.26.8.143</string>
-                    <string>104.26.9.143</string>
-                    <string>172.67.75.22</string>
-                    <string>2606:4700:20::681a:88f</string>
-                    <string>2606:4700:20::681a:98f</string>
-                    <string>2606:4700:20::ac43:4b16</string>
-                </array>
+
                 <key>ServerURL</key>
                 <string>https://my.ublockdns.com/z451ak95</string>
             </dict>
-            <key>PayloadDescription</key>
-            <string>Cấu hình DNS mã hóa chặn thu hồi Locket Gold.</string>
-            <key>PayloadDisplayName</key>
-            <string>Locket Gold DNS</string>
-            <key>PayloadIdentifier</key>
-            <string>com.duyvinh09.locketgold.dns</string>
+
+            <key>OnDemandRules</key>
+            <array>
+                <dict>
+                    <key>Action</key>
+                    <string>Connect</string>
+                </dict>
+            </array>
+
             <key>PayloadType</key>
             <string>com.apple.dnsSettings.managed</string>
+
+            <key>PayloadIdentifier</key>
+            <string>com.duyvinh09.locketgold.dns</string>
+
             <key>PayloadUUID</key>
             <string>6E7D9C2A-5B41-4F83-9A62-D1E0B7C845AF</string>
+
+            <key>PayloadDisplayName</key>
+            <string>Locket Gold DNS</string>
+
+            <key>PayloadOrganization</key>
+            <string>Nguyễn Quốc Cường</string>
+
             <key>PayloadVersion</key>
-            <integer>1</integer>
         </dict>
     </array>
-    <key>PayloadDescription</key>
-    <string>Hồ sơ cấu hình VIP chặn thu hồi Locket Gold vĩnh viễn.</string>
-    <key>PayloadDisplayName</key>
-    <string>Locket Gold 💛</string>
-    <key>PayloadIdentifier</key>
-    <string>com.duyvinh09.locketgold.profile</string>
-    <key>PayloadOrganization</key>
-    <string>Nguyễn Quốc Cường</string>
-    <key>PayloadRemovalDisallowed</key>
-    <false/>
-    <key>PayloadType</key>
-    <string>Configuration</string>
-    <key>PayloadUUID</key>
-    <string>A1E2F262-DB73-40F6-BD22-2E42A43A3C94</string>
-    <key>PayloadVersion</key>
-    <integer>1</integer>
 </dict>
 </plist>
