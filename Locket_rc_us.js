@@ -2,7 +2,6 @@
 // Locket API Rewrite (setClientData, User Profiles, Gold Badge, AI Filters)
 // Endpoint: https://api.locketcamera.com/
 // Dùng cho: Shadowrocket / Loon / Quantumult X / Surge
-// Tác giả: @duyvinh09 (Đã fix giữ vĩnh viễn Huy hiệu Locket Gold & AI Unblur)
 // ============================================================
 
 const TIMEZONE = 'America/New_York';
