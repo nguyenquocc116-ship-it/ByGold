@@ -1,6 +1,274 @@
 // ============================================================
-// Locket setClientData – Override experiments only
+// Locket API Rewrite (setClientData, User Profiles, Gold Badge, AI Filters)
 // Endpoint: https://api.locketcamera.com/
+// Dùng cho: Shadowrocket / Loon / Quantumult X / Surge
+// Tác giả: @duyvinh09 (Đã fix giữ vĩnh viễn Huy hiệu Locket Gold & AI Unblur)
 // ============================================================
 
-const _0x374071=_0x477a;function _0x4d8d(){const _0x495ede=['UBLNW','YRupV','values','ejEKO','can_view','is_unlocke','moMxr','unblurred_','some','blurred_ur','5030223VJwQza','x-revenuec','170064OCONiD','body','POST','add','kTFit','HGeZl','enabled','Kekal','country_co','string','ErABx','gold_only','AlRHB','Enbga','Code','ickers','d-since','DefDe','cess','item_type','6bxLmmL','BKVCe','mhKWO','lters','headers','ountry','toLowerCas','70BvZtSU','can_use_fi','stringify','statusCode','America/Ne','gold','includes','142805nchEib','upsell','rRCaQ','is_gold_on','bIohu','object','free','locket_gol','isArray','unlocked','blurred','fcm_token','dukGV','is_locked','old','lter','360603prPLbO','push_token','time_zone','ld_feature','X-Country-','OZPhr','X-App-Regi','315strcBB','mfyun','sticker_id','BuXXH','allowed','phone_numb','xZSph','show_upsel','rBhQp','is_availab','sGrjK','requires_g','can_use_st','uIpsA','AJGjF','age_url','iGFjl','5XHdhpY','PIKxK','is_blurred','GCbGD','toUpperCas','jhLIg','is_free','if-none-ma','locked','keys','XiELh','kMckF','Hajao','RAXGa','1510548TzYhfM','at-etag','HPoNc','WmTDj','transforme','applicatio','url','email','hYqTC','show_paywa','geHwq','paywall','pkhYT','needs_gold','IhImW','assign','AYQgu','parse','result_url','can_use_go','filter_id','forEach','11274lPKUhh','d_image_ur','582033yyqhMd','unlocked_u','require_go','error','sticker_ac','EKgMp','AZfLj','blurred_im','test','gwtEH','reskN','IoeqD','X-Timezone','Dfyhz','w_York','if-modifie','has','X-Device-C','method','UUjmH','active','mVqCW','status','tch','HRvbF','image_url','n/json','VEwYQ','undefined','details'];_0x4d8d=function(){return _0x495ede;};return _0x4d8d();}(function(_0x9c6939,_0x362695){const _0xebe09=_0x477a,_0x4db016=_0x9c6939();while(!![]){try{const _0x458c95=parseInt(_0xebe09(0x164))/(-0x61b*0x3+0x819+0x1*0xa39)*(-parseInt(_0xebe09(0x156))/(0x9*-0x2a1+-0x2580+0x3d2b))+parseInt(_0xebe09(0x1b2))/(0x22*0x7+-0x9d9+0x8ee)+-parseInt(_0xebe09(0x19a))/(0x139a+-0x1cce+0x938)*(-parseInt(_0xebe09(0x18c))/(0x198a+-0x137*-0x12+-0x2f63*0x1))+parseInt(_0xebe09(0x1b0))/(-0x15e4+-0x176c+0x2d56*0x1)*(parseInt(_0xebe09(0x17b))/(0xfff*-0x2+0x643*-0x4+0x3911))+parseInt(_0xebe09(0x142))/(-0x1665+-0x1b*-0x3+0x161c)+-parseInt(_0xebe09(0x174))/(-0x1b35+0x1cc7+0x3*-0x83)*(parseInt(_0xebe09(0x15d))/(-0xe48+-0x3fb*-0x5+-0x595))+parseInt(_0xebe09(0x140))/(0x2f*0x2a+-0x7*-0x492+-0x27a9);if(_0x458c95===_0x362695)break;else _0x4db016['push'](_0x4db016['shift']());}catch(_0x3260eb){_0x4db016['push'](_0x4db016['shift']());}}}(_0x4d8d,0x404e7+0x14fe*0xc+0x17ebf));const TIMEZONE=_0x374071(0x161)+_0x374071(0x126);function _0x477a(_0x3113e4,_0x10bc66){_0x3113e4=_0x3113e4-(0x2*0xdff+0x5e3+-0x20c2);const _0x37d9d1=_0x4d8d();let _0x4d17a6=_0x37d9d1[_0x3113e4];return _0x4d17a6;}function applyGoldBadge(_0x4be134){const _0x2d705e=_0x374071,_0x25c8f8={'kTFit':function(_0x4c618c,_0x9ac80){return _0x4c618c!==_0x9ac80;},'WmTDj':_0x2d705e(0x169),'hYqTC':_0x2d705e(0x16b)+'d','sGrjK':_0x2d705e(0x162),'xZSph':_0x2d705e(0x12c)};if(!_0x4be134||_0x25c8f8[_0x2d705e(0x146)](typeof _0x4be134,_0x25c8f8[_0x2d705e(0x19d)]))return;Object[_0x2d705e(0x1a9)](_0x4be134,{'badge':_0x25c8f8[_0x2d705e(0x1a2)],'is_gold':!![],'has_gold':!![],'gold':!![],'gold_subscription':!![],'has_gold_subscription':!![],'tier':_0x25c8f8[_0x2d705e(0x185)],'subscription_status':_0x25c8f8[_0x2d705e(0x181)]});}if(typeof $response===_0x374071(0x134)){const headers=Object[_0x374071(0x1a9)]({},$request[_0x374071(0x15a)]||{});for(const key of Object[_0x374071(0x195)](headers)){[_0x374071(0x193)+_0x374071(0x12f),_0x374071(0x127)+_0x374071(0x152),_0x374071(0x141)+_0x374071(0x19b)][_0x374071(0x163)](key[_0x374071(0x15c)+'e']())&&delete headers[key];}headers[_0x374071(0x17a)+'on']='US',headers[_0x374071(0x178)+_0x374071(0x150)]='US',headers[_0x374071(0x129)+_0x374071(0x15b)]='US',headers[_0x374071(0x124)]=TIMEZONE;const output={'headers':headers};if(($request[_0x374071(0x12a)]||'')[_0x374071(0x190)+'e']()===_0x374071(0x144)&&$request[_0x374071(0x143)])try{const body=typeof $request[_0x374071(0x143)]===_0x374071(0x14b)?JSON[_0x374071(0x1ab)]($request[_0x374071(0x143)]):$request[_0x374071(0x143)];body&&typeof body===_0x374071(0x169)&&!Array[_0x374071(0x16c)](body)&&(body[_0x374071(0x14a)+'de']='us',body[_0x374071(0x176)]=TIMEZONE,output[_0x374071(0x143)]=JSON[_0x374071(0x15f)](body));}catch(_0x134e6f){}$done(output);}else{let body=$response[_0x374071(0x143)],status=$response[_0x374071(0x12e)]||$response[_0x374071(0x160)]||-0x2*0xd07+-0x20e9+0x3bbf;if(typeof body===_0x374071(0x14b)&&body)try{let obj=JSON[_0x374071(0x1ab)](body);([0xed1*-0x2+0x2448+-0x516,-0x2d1+0x22cc*-0x1+0x272f,0xc1*0x15+0x1*0x3c5+0x47*-0x41][_0x374071(0x163)](Number(status))||obj&&obj[_0x374071(0x1b5)])&&(status=-0xa2e+0x18aa*0x1+0x2*-0x6da,obj&&obj[_0x374071(0x1b5)]&&(obj={'result':{'status':0xc8,'is_gold':!![],'is_locked':![],'requires_gold':![],'unlocked':!![],'data':obj[_0x374071(0x1b5)][_0x374071(0x135)]||{}}}));const visited=new WeakSet();function transformNode(_0x2753c5){const _0x55ce06=_0x374071,_0x1b4106={'UBLNW':function(_0x2e7a8f,_0x94a688){return _0x2e7a8f!==_0x94a688;},'rRCaQ':_0x55ce06(0x169),'VEwYQ':_0x55ce06(0x1a1),'rBhQp':_0x55ce06(0x180)+'er','IoeqD':_0x55ce06(0x175),'HRvbF':_0x55ce06(0x16f),'jhLIg':_0x55ce06(0x15e)+_0x55ce06(0x159),'ejEKO':_0x55ce06(0x1ad)+_0x55ce06(0x177)+'s','moMxr':function(_0x492ef1,_0xb2e8c8){return _0x492ef1(_0xb2e8c8);},'OZPhr':_0x55ce06(0x171),'uIpsA':_0x55ce06(0x194),'HPoNc':_0x55ce06(0x186)+_0x55ce06(0x172),'Enbga':_0x55ce06(0x1b4)+'ld','dukGV':_0x55ce06(0x14d),'gwtEH':_0x55ce06(0x167)+'ly','mfyun':_0x55ce06(0x1a5),'pkhYT':_0x55ce06(0x1a3)+'ll','HGeZl':_0x55ce06(0x182)+'l','YRupV':_0x55ce06(0x165),'geHwq':_0x55ce06(0x16e),'BuXXH':_0x55ce06(0x18e),'AYQgu':_0x55ce06(0x1a7),'ErABx':function(_0x29adf5,_0x18c998){return _0x29adf5 in _0x18c998;},'reskN':_0x55ce06(0x13a),'IhImW':_0x55ce06(0x16d),'Dfyhz':_0x55ce06(0x13b)+'d','mVqCW':_0x55ce06(0x192),'iGFjl':_0x55ce06(0x16a),'AZfLj':_0x55ce06(0x15e)+_0x55ce06(0x173),'kMckF':_0x55ce06(0x17f),'EKgMp':_0x55ce06(0x187)+_0x55ce06(0x151),'UUjmH':_0x55ce06(0x1b6)+_0x55ce06(0x154),'Hajao':_0x55ce06(0x184)+'le','RAXGa':_0x55ce06(0x148),'Kekal':function(_0x599e81,_0x5bcfdb){return _0x599e81 in _0x5bcfdb;},'bIohu':function(_0x2d5e2a,_0x21a928){return _0x2d5e2a in _0x21a928;},'AJGjF':_0x55ce06(0x155),'mhKWO':_0x55ce06(0x17d),'XiELh':function(_0x2422c8,_0x129469){return _0x2422c8 in _0x129469;},'PIKxK':_0x55ce06(0x1ae),'DefDe':function(_0x2a2171,_0xb90a0d){return _0x2a2171===_0xb90a0d;},'AlRHB':_0x55ce06(0x14b),'BKVCe':_0x55ce06(0x13f)+'l','GCbGD':_0x55ce06(0x11f)+_0x55ce06(0x18a)};if(!_0x2753c5||_0x1b4106[_0x55ce06(0x136)](typeof _0x2753c5,_0x1b4106[_0x55ce06(0x166)])||visited[_0x55ce06(0x128)](_0x2753c5))return;visited[_0x55ce06(0x145)](_0x2753c5);if(Array[_0x55ce06(0x16c)](_0x2753c5)){_0x2753c5[_0x55ce06(0x1af)](transformNode);return;}const _0x30b7f5=[_0x1b4106[_0x55ce06(0x133)],_0x1b4106[_0x55ce06(0x183)],_0x1b4106[_0x55ce06(0x123)],_0x1b4106[_0x55ce06(0x130)],_0x1b4106[_0x55ce06(0x191)],_0x1b4106[_0x55ce06(0x139)]][_0x55ce06(0x13e)](_0x227c06=>_0x227c06 in _0x2753c5);_0x30b7f5&&(_0x1b4106[_0x55ce06(0x13c)](applyGoldBadge,_0x2753c5),Object[_0x55ce06(0x1a9)](_0x2753c5,{'can_use_filters':!![],'can_use_gold_features':!![],'can_generate_filtered_image':!![],'can_create_filtered_image':!![],'has_ai_access':!![],'filter_access':!![],'can_use_stickers':!![],'sticker_access':!![],'unlimited_stickers':!![]}));const _0xda0d22=[_0x1b4106[_0x55ce06(0x179)],_0x1b4106[_0x55ce06(0x188)],_0x1b4106[_0x55ce06(0x19c)],_0x1b4106[_0x55ce06(0x14f)],_0x1b4106[_0x55ce06(0x170)],_0x1b4106[_0x55ce06(0x121)],_0x1b4106[_0x55ce06(0x17c)],_0x1b4106[_0x55ce06(0x1a6)],_0x1b4106[_0x55ce06(0x147)],_0x1b4106[_0x55ce06(0x137)],_0x1b4106[_0x55ce06(0x1a4)],_0x1b4106[_0x55ce06(0x17e)],_0x1b4106[_0x55ce06(0x1aa)]];for(const _0x49f3e1 of _0xda0d22){_0x1b4106[_0x55ce06(0x14c)](_0x49f3e1,_0x2753c5)&&(_0x2753c5[_0x49f3e1]=![]);}const _0x19ff75=[_0x1b4106[_0x55ce06(0x122)],_0x1b4106[_0x55ce06(0x1a8)],_0x1b4106[_0x55ce06(0x125)],_0x1b4106[_0x55ce06(0x12d)],_0x1b4106[_0x55ce06(0x18b)],_0x1b4106[_0x55ce06(0x1b8)],_0x1b4106[_0x55ce06(0x197)],_0x1b4106[_0x55ce06(0x191)],_0x1b4106[_0x55ce06(0x1b7)],_0x1b4106[_0x55ce06(0x12b)],_0x1b4106[_0x55ce06(0x198)],_0x1b4106[_0x55ce06(0x199)]];for(const _0x560b48 of _0x19ff75){_0x1b4106[_0x55ce06(0x149)](_0x560b48,_0x2753c5)&&(_0x2753c5[_0x560b48]=!![]);}(_0x1b4106[_0x55ce06(0x168)](_0x1b4106[_0x55ce06(0x189)],_0x2753c5)||_0x1b4106[_0x55ce06(0x14c)](_0x1b4106[_0x55ce06(0x158)],_0x2753c5)||_0x1b4106[_0x55ce06(0x196)](_0x1b4106[_0x55ce06(0x18d)],_0x2753c5))&&Object[_0x55ce06(0x1a9)](_0x2753c5,{'is_locked':![],'requires_gold':![],'unlocked':!![],'is_free':!![]});const _0x9286f5=_0x2753c5[_0x55ce06(0x13d)+_0x55ce06(0x1a0)]||_0x2753c5[_0x55ce06(0x1b3)+'rl']||_0x2753c5[_0x55ce06(0x1ac)]||_0x2753c5[_0x55ce06(0x131)]||_0x2753c5[_0x55ce06(0x19e)+_0x55ce06(0x1b1)+'l']||_0x2753c5[_0x55ce06(0x1a0)];_0x1b4106[_0x55ce06(0x153)](typeof _0x9286f5,_0x1b4106[_0x55ce06(0x14e)])&&/^https?:\/\//[_0x55ce06(0x120)](_0x9286f5)&&(_0x1b4106[_0x55ce06(0x14c)](_0x1b4106[_0x55ce06(0x157)],_0x2753c5)&&(_0x2753c5[_0x55ce06(0x13f)+'l']=_0x9286f5),_0x1b4106[_0x55ce06(0x196)](_0x1b4106[_0x55ce06(0x18f)],_0x2753c5)&&(_0x2753c5[_0x55ce06(0x11f)+_0x55ce06(0x18a)]=_0x9286f5));for(const _0x82a637 of Object[_0x55ce06(0x138)](_0x2753c5)){_0x1b4106[_0x55ce06(0x13c)](transformNode,_0x82a637);}}transformNode(obj),body=JSON[_0x374071(0x15f)](obj);}catch(_0x417473){}$done({'status':status,'headers':Object[_0x374071(0x1a9)]({},$response[_0x374071(0x15a)]||{},{'content-type':_0x374071(0x19f)+_0x374071(0x132)}),'body':body});}
+const TIMEZONE = 'America/New_York';
+
+function applyGoldBadge(node) {
+  if (!node || typeof node !== 'object') return;
+  Object.assign(node, {
+    badge: 'locket_gold',
+    show_badge: true,
+    badge_visible: true,
+    display_badge: true,
+    has_badge: true,
+    profile_badge: 'locket_gold',
+    profile_banner: true,
+    show_profile_banner: true,
+    has_profile_banner: true,
+    // Ảnh bìa / banner trang cá nhân
+    banner_url: 'https://cdn.upanhlaylink.com/i/wt33vPYm.jpg',
+    cover_url: 'https://cdn.upanhlaylink.com/i/wt33vPYm.jpg',
+    cover_image_url: 'https://cdn.upanhlaylink.com/i/wt33vPYm.jpg',
+    profile_banner_url: 'https://cdn.upanhlaylink.com/i/wt33vPYm.jpg',
+    header_url: 'https://cdn.upanhlaylink.com/i/wt33vPYm.jpg',
+    header_image_url: 'https://cdn.upanhlaylink.com/i/wt33vPYm.jpg',
+    is_gold: true,
+    has_gold: true,
+    gold: true,
+    gold_subscription: true,
+    has_gold_subscription: true,
+    tier: 'gold',
+    subscription_status: 'active',
+    // Mở khóa đăng video không giới hạn độ dài từ cuộn camera & quay video
+    can_upload_video: true,
+    can_upload_longer_videos: true,
+    longer_videos_enabled: true,
+    longer_camera_roll_videos_enabled: true,
+    camera_roll_video_enabled: true,
+    camera_roll_video_upload_enabled: true,
+    camera_roll_max_duration: 99999,
+    video_max_duration: 99999,
+    gold_max_duration: 99999,
+    max_duration: 99999,
+  });
+}
+
+if (typeof $response === 'undefined') {
+  // ------------------------------------------------------------
+  // XỬ LÝ REQUEST: Fake Region US & Luôn gửi huy hiệu Gold lên server
+  // ------------------------------------------------------------
+  const headers = Object.assign({}, $request.headers || {});
+  for (const key of Object.keys(headers)) {
+    if (['if-none-match', 'if-modified-since', 'x-revenuecat-etag'].includes(key.toLowerCase())) {
+      delete headers[key];
+    }
+  }
+  headers['X-App-Region'] = 'US';
+  headers['X-Country-Code'] = 'US';
+  headers['X-Device-Country'] = 'US';
+  headers['X-Timezone'] = TIMEZONE;
+
+  const output = { headers: headers };
+
+  if (($request.method || '').toUpperCase() === 'POST' && $request.body) {
+    try {
+      const body = typeof $request.body === 'string' ? JSON.parse($request.body) : $request.body;
+      if (body && typeof body === 'object' && !Array.isArray(body)) {
+        body.country_code = 'us';
+        body.time_zone = TIMEZONE;
+
+        // Giữ huy hiệu Locket Gold khi client gửi cập nhật thông tin
+        if (body.data && typeof body.data === 'object') {
+          body.data.badge = 'locket_gold';
+          body.data.show_badge = true;
+        }
+        if ('badge' in body) {
+          body.badge = 'locket_gold';
+        }
+
+        output.body = JSON.stringify(body);
+      }
+    } catch (e) {}
+  }
+  $done(output);
+} else {
+  // ------------------------------------------------------------
+  // XỬ LÝ RESPONSE: Giữ vĩnh viễn Huy hiệu Locket Gold & Gỡ mờ AI
+  // ------------------------------------------------------------
+  let body = $response.body;
+  let status = $response.status || $response.statusCode || 200;
+
+  if (typeof body === 'string' && body) {
+    try {
+      let obj = JSON.parse(body);
+
+      // Nếu API trả về lỗi quyền hạn (400, 401, 403 hoặc obj.error), ép về 200 Success
+      if ([400, 401, 403].includes(Number(status)) || (obj && obj.error)) {
+        status = 200;
+        if (obj && obj.error) {
+          obj = {
+            result: {
+              status: 200,
+              is_gold: true,
+              is_locked: false,
+              requires_gold: false,
+              unlocked: true,
+              data: obj.error.details || {},
+            },
+          };
+        }
+      }
+
+      // Xử lý riêng cho endpoint cập nhật thông tin cá nhân / đổi huy hiệu
+      const url = $request.url || '';
+      if (url.includes('changeProfileInfo') || url.includes('setClientData') || url.includes('updateUser')) {
+        status = 200;
+        if (!obj || typeof obj !== 'object') obj = {};
+        if (!obj.result) obj.result = { status: 200, data: {} };
+        if (!obj.result.data) obj.result.data = {};
+        applyGoldBadge(obj.result.data);
+      }
+
+      const visited = new WeakSet();
+
+      function transformNode(node) {
+        if (!node || typeof node !== 'object' || visited.has(node)) return;
+        visited.add(node);
+
+        if (Array.isArray(node)) {
+          node.forEach(transformNode);
+          return;
+        }
+
+        // 1. TỰ ĐỘNG GẮN HUY HIỆU GOLD VÀO MỌI USER OBJECT (tránh bị mất khi thoát app)
+        const isUserNode =
+          'badge' in node ||
+          'username' in node ||
+          'uid' in node ||
+          'user_id' in node ||
+          'first_name' in node ||
+          'last_name' in node ||
+          'profile_picture' in node ||
+          'profile_picture_url' in node;
+
+        if (isUserNode) {
+          applyGoldBadge(node);
+        }
+
+        // 2. MỞ KHÓA TÍNH NĂNG VÀ BỘ LỌC AI
+        const triggerKeys = [
+          'email',
+          'phone_number',
+          'push_token',
+          'fcm_token',
+          'can_use_filters',
+          'can_use_stickers',
+          'filter_id',
+          'item_type',
+          'sticker_id',
+          'result_url',
+          'blurred_image_url',
+          'blurred_url',
+        ];
+
+        if (triggerKeys.some((k) => k in node)) {
+          applyGoldBadge(node);
+          Object.assign(node, {
+            can_use_filters: true,
+            can_use_gold_features: true,
+            can_generate_filtered_image: true,
+            can_create_filtered_image: true,
+            has_ai_access: true,
+            filter_access: true,
+            can_use_stickers: true,
+            sticker_access: true,
+            unlimited_stickers: true,
+          });
+        }
+
+        // 3. TẮT CÁC CỜ KHÓA / BẮT BUỘC TRẢ TIỀN
+        const lockKeysToDisable = [
+          'is_locked',
+          'requires_gold',
+          'locked',
+          'needs_gold',
+          'gold_only',
+          'is_gold_only',
+          'paywall',
+          'show_paywall',
+          'show_upsell',
+          'upsell',
+          'require_gold',
+          'is_blurred',
+          'blurred',
+        ];
+        for (const k of lockKeysToDisable) {
+          if (k in node) node[k] = false;
+        }
+
+        // 4. BẬT CÁC CỜ CHO PHÉP XEM & SỬ DỤNG
+        const unlockKeysToEnable = [
+          'can_view',
+          'unlocked',
+          'is_unlocked',
+          'is_free',
+          'free',
+          'allowed',
+          'can_use_filters',
+          'can_use_stickers',
+          'sticker_access',
+          'is_available',
+          'enabled',
+          'active',
+          'longer_videos_enabled',
+          'longer_camera_roll_videos_enabled',
+          'camera_roll_video_enabled',
+          'camera_roll_video_upload_enabled',
+        ];
+        for (const k of unlockKeysToEnable) {
+          if (k in node) node[k] = true;
+        }
+
+        // Bỏ giới hạn độ dài video nếu API trả về
+        const durKeys = ['video_max_duration', 'gold_max_duration', 'max_duration', 'camera_roll_max_duration', 'trim_max_duration'];
+        for (const dk of durKeys) {
+          if (dk in node && typeof node[dk] === 'number') {
+            node[dk] = 99999;
+          }
+        }
+
+        if ('item_type' in node || 'sticker_id' in node || 'filter_id' in node) {
+          Object.assign(node, {
+            is_locked: false,
+            requires_gold: false,
+            unlocked: true,
+            is_free: true,
+          });
+        }
+
+        // 5. GỠ MỜ ẢNH AI / HIỆU ỨNG NGÀY LỄ
+        const unblurredUrl =
+          node.unblurred_image_url ||
+          node.unlocked_url ||
+          node.result_url ||
+          node.transformed_image_url ||
+          node.url ||
+          node.image_url;
+
+        if (typeof unblurredUrl === 'string' && /^https?:\/\//.test(unblurredUrl)) {
+          if ('blurred_url' in node) node.blurred_url = unblurredUrl;
+          if ('blurred_image_url' in node) node.blurred_image_url = unblurredUrl;
+        }
+
+        for (const val of Object.values(node)) {
+          transformNode(val);
+        }
+      }
+
+      transformNode(obj);
+      body = JSON.stringify(obj);
+    } catch (e) {}
+  }
+
+  $done({
+    status: status,
+    headers: Object.assign({}, $response.headers || {}, {
+      'content-type': 'application/json',
+    }),
+    body: body,
+  });
+}
