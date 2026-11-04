@@ -2,7 +2,7 @@
 #!name=Locket_Gold
 
 [Script]
-revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://cdn.jsdelivr.net/gh/dinhduyvinh09/AppPre@refs/heads/main/js/Locket_DuyVinh09.js, requires-body=true, max-size=-1, timeout=60
+revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://cdn.jsdelivr.net/gh/nguyenquocc116-ship-it/ByGold@refs/heads/main/Locket_1.js, requires-body=true, max-size=-1, timeout=60
 
 deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://cdn.jsdelivr.net/gh/dinhduyvinh09/AppPre@refs/heads/main/js/deleteHeader.js, timeout=60
 
